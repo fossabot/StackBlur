@@ -1,0 +1,9 @@
+version: 0.1.0.{build}
+
+image: Visual Studio 2017
+
+before_build:
+- pwsh: dotnet restore
+
+build:
+  verbosity: minimal

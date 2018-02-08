@@ -1,0 +1,17 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: microsoft/dotnet:2-sdk
+
+    steps:
+      - checkout
+
+      - run:
+          name: Restore the dependencies
+          command: dotnet restore
+
+      - run:
+          name: Build the project
+          command: dotnet build
