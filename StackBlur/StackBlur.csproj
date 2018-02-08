@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Version>0.1.0-beta</Version>
+    <Authors>Victorique Ko</Authors>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/victoriqueko/stackblur/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/victoriqueko/stackblur</PackageProjectUrl>
+    <Copyright>Copyright (c) 2018 Victorique Ko</Copyright>
+    <Description>Fast and almost Gaussian blur implementation in C#.</Description>
+    <PackageTags>image-processing, blur, gaussian, stackblur</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
