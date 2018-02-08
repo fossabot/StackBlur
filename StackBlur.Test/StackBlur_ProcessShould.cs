@@ -52,11 +52,11 @@ namespace StackBlur.Test
         }
 
         [Theory]
-        [InlineData("0px.png", "10px.png", 10)]
-        [InlineData("0px.png", "20px.png", 20)]
-        [InlineData("0px.png", "30px.png", 30)]
-        [InlineData("0px.png", "40px.png", 40)]
-        [InlineData("0px.png", "50px.png", 50)]
+        [InlineData("Images/0px.png", "Images/10px.png", 10)]
+        [InlineData("Images/0px.png", "Images/20px.png", 20)]
+        [InlineData("Images/0px.png", "Images/30px.png", 30)]
+        [InlineData("Images/0px.png", "Images/40px.png", 40)]
+        [InlineData("Images/0px.png", "Images/50px.png", 50)]
         public void ReturnBlurredImage(string filename, string expectedFilename, int radius)
         {
             var bitmap = new Bitmap(filename);
