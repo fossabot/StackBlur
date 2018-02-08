@@ -2,8 +2,24 @@ version: 0.1.0.{build}
 
 image: Visual Studio 2017
 
+environment:
+  CODECOVTOKEN:
+    secure: FrON4R1JJYvEv/Ow3d3/K8IUkrY1pQ+Kc6eGVkOCLw0l1Lz/UiBD92cME52KPd5i
+
 before_build:
 - pwsh: dotnet restore
 
 build:
   verbosity: minimal
+
+before_test:
+- pwsh: choco install opencover.portable
+
+test_script:
+- pwsh: OpenCover.Console.exe -register:user -target:"C:/Program Files/dotnet/dotnet.exe" -targetargs:"test StackBlur.Test\StackBlur.Test.csproj" -filter:"+[StackBlur*]* -[StackBlur.Test*]*" -output:".\StackBlur_coverage.xml" -oldstyle
+
+after_test:
+- pwsh: >-
+    choco install codecov
+
+    codecov -f "StackBlur_coverage.xml" -t $env:CODECOVTOKEN
