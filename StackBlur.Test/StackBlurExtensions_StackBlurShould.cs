@@ -1,4 +1,4 @@
-// Copyright (c) 2018 Victorique Ko
+﻿// Copyright (c) 2018 Victorique Ko
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -23,11 +23,12 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Linq;
 using System.Runtime.InteropServices;
+using StackBlur.Extensions;
 using Xunit;
 
 namespace StackBlur.Test
 {
-    public class StackBlur_ProcessShould
+    public class StackBlurExtensions_StackBlurShould
     {
         private static bool IsEqual(Bitmap lhs, Bitmap rhs)
         {
@@ -62,7 +63,7 @@ namespace StackBlur.Test
             var bitmap = new Bitmap(filename);
             var expectedBitmap = new Bitmap(expectedFilename);
 
-            StackBlur.Process(bitmap, radius);
+            bitmap.StackBlur(radius);
 
             Assert.True(IsEqual(bitmap, expectedBitmap));
         }
