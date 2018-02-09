@@ -12,7 +12,7 @@ Fast and almost Gaussian blur implementation in C#.
 
 Use static method:
 
-```
+```C#
 var bitmap = new Bitmap("image.bmp");
 var radius = 10;
 
@@ -23,7 +23,7 @@ bitmap.Save("blurred image.bmp");
 
 Or Extension:
 
-```
+```C#
 var bitmap = new Bitmap("image.bmp");
 var radius = 10;
 
@@ -38,12 +38,12 @@ Install as [NuGet Package](https://www.nuget.org/packages/StackBlur):
 
 - Package manager
 
-  ```
+  ```PowerShell
   Install-Package StackBlur
   ```
 
 - .NET CLI
 
-  ```
+  ```PowerShell
   dotnet add package StackBlur
   ```
