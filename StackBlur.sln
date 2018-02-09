@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackBlur", "StackBlur\StackBlur.csproj", "{4F2B05B8-159F-420D-B48E-8A60ACA84FB8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackBlur", "StackBlur/StackBlur.csproj", "{4F2B05B8-159F-420D-B48E-8A60ACA84FB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackBlur.Test", "StackBlur.Test\StackBlur.Test.csproj", "{9EB40EA8-1FF9-4AD9-B949-79A5B0C7EB03}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackBlur.Test", "StackBlur.Test/StackBlur.Test.csproj", "{9EB40EA8-1FF9-4AD9-B949-79A5B0C7EB03}"
 	ProjectSection(ProjectDependencies) = postProject
 		{4F2B05B8-159F-420D-B48E-8A60ACA84FB8} = {4F2B05B8-159F-420D-B48E-8A60ACA84FB8}
 	EndProjectSection
