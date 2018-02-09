@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.0;net461</TargetFrameworks>
     <Version>0.1.0-beta1</Version>
     <Authors>Victorique Ko</Authors>
     <PackageLicenseUrl>https://raw.githubusercontent.com/victoriqueko/stackblur/master/LICENSE</PackageLicenseUrl>
