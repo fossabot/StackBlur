@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
-    <Version>0.1.0-beta</Version>
+    <Version>0.1.0-beta1</Version>
     <Authors>Victorique Ko</Authors>
     <PackageLicenseUrl>https://raw.githubusercontent.com/victoriqueko/stackblur/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/victoriqueko/stackblur</PackageProjectUrl>
