@@ -22,8 +22,16 @@ using System.Drawing;
 
 namespace StackBlur.Extensions
 {
+    /// <summary>
+    /// Provides extension method for process stack blur
+    /// </summary>
     public static class StackBlurExtensions
     {
+        /// <summary>
+        /// Process stack blur.
+        /// </summary>
+        /// <param name="bitmap">The bitmap to process.</param>
+        /// <param name="radius">Gaussian blur radius.</param>
         public static void StackBlur(this Bitmap bitmap, int radius)
         {
             global::StackBlur.StackBlur.Process(bitmap, radius);

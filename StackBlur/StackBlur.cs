@@ -39,6 +39,9 @@ namespace StackBlur
         internal BlurStack Next { get; set; }
     }
 
+    /// <summary> 
+    /// Provides method for process stack blur.
+    /// </summary>
     public static class StackBlur
     {
         private static readonly int[] MulTable =
@@ -81,6 +84,11 @@ namespace StackBlur
             24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24
         };
 
+        /// <summary>
+        /// Process stack blur.
+        /// </summary>
+        /// <param name="bitmap">The bitmap to process.</param>
+        /// <param name="radius">Gaussian blur radius.</param>
         public static void Process(Bitmap bitmap, int radius)
         {
             var width = bitmap.Width;
