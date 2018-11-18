@@ -3,6 +3,7 @@
 [![AppVeyor](https://img.shields.io/appveyor/ci/victoriqueko/stackblur/master.svg)](https://ci.appveyor.com/project/victoriqueko/stackblur/branch/master)
 [![Codecov](https://img.shields.io/codecov/c/github/victoriqueko/stackblur/master.svg)](https://codecov.io/gh/victoriqueko/stackblur)
 [![NuGet](https://img.shields.io/nuget/vpre/StackBlur.svg)](https://www.nuget.org/packages/StackBlur)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvictoriqueko%2FStackBlur.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvictoriqueko%2FStackBlur?ref=badge_shield)
 
 Fast and almost Gaussian blur implementation in C#.
 
@@ -47,3 +48,7 @@ Install as [NuGet Package](https://www.nuget.org/packages/StackBlur):
   ```PowerShell
   dotnet add package StackBlur
   ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvictoriqueko%2FStackBlur.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvictoriqueko%2FStackBlur?ref=badge_large)
